@@ -15,6 +15,8 @@ Use a browser on your host to access the website on http://localhost:8000\
 Use curl to access the other two using  http://localhost:8001 and  http://localhost:8002 with verbose, thus\
 curl -v localhost:8002 to see the headers
 
+On the host, use ls -lt /var/lib/docker/volumes/nginx2-logs/_data\
+to see the data in the volume
 
 Jan 2024
 
