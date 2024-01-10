@@ -18,7 +18,7 @@ rm -rf /var/lib/docker/volumes/nginx2-logs/_data/*
 
 
 docker build -t nginx2 .
-docker run -d -p 8000:80 -p 8001:81 -p 8002:82 -v nginx2-volume1:/volume1 -v $(pwd)/bindmount1:/bindmount1 -v  nginx2-logs:/var/log/nginx     --name nginx2 nginx2
+docker run -d -p 8000:80 -p 8001:81 -p 8002:82 -v nginx2-volume1:/volume1 -v $(pwd)/bindmount1:/bindmount1 -v nginx2-logs:/var/log/nginx --name nginx2 nginx2
 docker exec -it nginx2 /bin/bash
 
 ##Once you have exited from the Exec, the following will be run.
