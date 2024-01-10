@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -eu
+
+LC_ALL=C
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+THISISANENVIRONMENTVARIABLE="The Settting Required"
+export THISISANENVIRONMENTVARIABLE
+
